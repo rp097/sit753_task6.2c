@@ -16,10 +16,12 @@ pipeline{
             }
             post{
                 success {
-                    mail to: "rahulprem90@gmail.com",
-                    subject: "Jenkins Testing Status",
-                    body: "Dear Developer, all your unit and integration tests were successful! Please find logs attached to this email",
-                    attachLog: true
+                    emailext(
+                        to: "rahulprem90@gmail.com",
+                        subject: "Jenkins Testing Status",
+                        body: "Dear Developer, all your unit and integration tests were successful! Please find logs attached to this email",
+                        attachLog: true
+                    )
                 }
             }
         }
@@ -36,10 +38,12 @@ pipeline{
             }
             post{
                 success {
-                    mail to: "rahulprem90@gmail.com",
-                    subject: "Jenkins Security Scan",
-                    body: "Dear Developer, your Security Scan was completed successfully! Please find logs attached to this email",
-                    attachLog: true
+                    emailext(
+                        to: "rahulprem90@gmail.com",
+                        subject: "Jenkins Security Scan",
+                        body: "Dear Developer, your Security Scan was completed successfully! Please find logs attached to this email",
+                        attachLog: true
+                    )
                 }
             }
         }
