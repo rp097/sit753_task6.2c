@@ -60,7 +60,7 @@ pipeline{
             steps{
                 echo "Deploying Application to Oracle Cloud..."
                 sleep 5
-                echo "Deployment complete!"
+                echo "Deployment complete."
             }
         }
     }
