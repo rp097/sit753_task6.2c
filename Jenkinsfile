@@ -18,7 +18,7 @@ pipeline{
                 success {
                     mail to: "rahulprem90@gmail.com",
                     subject: "Jenkins Testing Status",
-                    body: "Dear Developer, all your unit and integration tests were successful! Please find logs attached to this email"
+                    body: "Dear Developer, all your unit and integration tests were successful! Please find logs attached to this email",
                     attachLog: true
                 }
             }
@@ -38,7 +38,7 @@ pipeline{
                 success {
                     mail to: "rahulprem90@gmail.com",
                     subject: "Jenkins Security Scan",
-                    body: "Dear Developer, your Security Scan was completed successfully! Please find logs attached to this email"
+                    body: "Dear Developer, your Security Scan was completed successfully! Please find logs attached to this email",
                     attachLog: true
                 }
             }
