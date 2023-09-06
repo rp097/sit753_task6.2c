@@ -28,6 +28,7 @@ pipeline{
         stage('Code Analysis'){
             steps{
                 echo "Analysing the code with CodeClimate..."
+                sleep 2
                 echo "Code Analysis complete!"
             }
         }
