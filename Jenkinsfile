@@ -4,6 +4,7 @@ pipeline{
         stage('Build'){
             steps{
                 echo "Building the code with Gradle..."
+                sleep 5
                 echo "Build complete!"
             }
         }
